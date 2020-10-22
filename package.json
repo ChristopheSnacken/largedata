@@ -1,4 +1,5 @@
 {
+  "homepage": "http://ChristopheSnacken.github.io/largedata",
   "name": "fib",
   "version": "0.1.0",
   "main": "build/static/js/bundle.js",
@@ -10,7 +11,6 @@
   "publishConfig": {
     "access": "restricted"
   },
-  "homepage": ".",
   "devDependencies": {
     "@babel/core": "7.7.4",
     "@babel/plugin-transform-react-jsx": "7.7.4",
@@ -45,6 +45,7 @@
     "eslint-plugin-react-hooks": "^2.2.0",
     "file-loader": "4.3.0",
     "fs-extra": "^8.1.0",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "4.0.0-beta.5",
     "identity-obj-proxy": "3.0.0",
     "jest": "24.9.0",
@@ -88,7 +89,9 @@
     "test": "node scripts/test.js",
     "build:npm": "NPM_BUILD=true node scripts/build.js && yarn types",
     "types": "tsc -p tsconfig.typings.json",
-    "lint:css": "stylelint './src/**/*'"
+    "lint:css": "stylelint './src/**/*'",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "pigeon"
