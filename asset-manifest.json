@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/largedata/static/js/bundle.js",
+    "main.js.map": "/largedata/static/js/bundle.js.map",
+    "index.html": "/largedata/index.html",
+    "static/js/bundle.js.LICENSE": "/largedata/static/js/bundle.js.LICENSE",
+    "static/media/Logo.png": "/largedata/static/media/Logo.894eb0a8.png",
+    "static/media/Reset.png": "/largedata/static/media/Reset.548c1a44.png"
+  },
+  "entrypoints": [
+    "static/js/bundle.js"
+  ]
+}
